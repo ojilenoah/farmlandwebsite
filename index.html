@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ikot Aba Country Farms</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#2f4d39",
+                        "background": "#faf9f7",
+                        "secondary": "#536442",
+                        "primary": "#163422",
+                        "primary-container": "#2d4b37",
+                        "surface": "#faf9f7",
+                        "surface-dim": "#dadad8",
+                        "surface-container-low": "#f4f3f1",
+                        "tertiary-fixed": "#f4dfcb",
+                        "on-primary-container": "#99baa1",
+                        "on-background": "#1a1c1b",
+                        "secondary-fixed-dim": "#bacda4",
+                        "on-primary-fixed": "#022110",
+                        "primary-fixed-dim": "#adcfb4",
+                        "on-surface-variant": "#424843",
+                        "on-secondary-fixed-variant": "#3c4c2c",
+                        "tertiary-container": "#504234",
+                        "surface-container": "#efeeec",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#524436",
+                        "surface-bright": "#faf9f7",
+                        "outline": "#727972",
+                        "on-secondary-fixed": "#111f05",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#d7c3b0",
+                        "tertiary": "#382c1f",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary-container": "#596a47",
+                        "on-tertiary-container": "#c2af9c",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#241a0e",
+                        "surface-tint": "#466550",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d6e9be",
+                        "surface-container-high": "#e9e8e6",
+                        "inverse-primary": "#adcfb4",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e3e2e0",
+                        "secondary-container": "#d6e9be",
+                        "inverse-on-surface": "#f1f1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#c8ebd0",
+                        "outline-variant": "#c2c8c0",
+                        "on-surface": "#1a1c1b",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2f3130"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "card": "32px"
+                    },
+                    "spacing": {
+                        "container-padding": "32px",
+                        "section-margin": "64px",
+                        "unit": "8px",
+                        "card-gap": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Manrope"],
+                        "label-sm": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "h3": ["Manrope"],
+                        "h1": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "h2": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .signature-shadow {
+            box-shadow: 0 4px 40px -10px rgba(22, 52, 34, 0.15);
+        }
+        .hero-gradient-overlay {
+            background: linear-gradient(to bottom, rgba(22, 52, 34, 0.4), rgba(22, 52, 34, 0.8));
+        }
+        header {
+            transition: background-color 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+        }
+        header.scrolled {
+            background-color: #ffffff;
+            box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+            border-bottom: 1px solid #E5E2DA;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Header (Shared Component: TopNavBar) -->
+<header class="w-full sticky top-0 z-50 bg-background">
+<nav class="max-w-[1280px] mx-auto flex justify-between items-center px-8 py-4 font-manrope tracking-tight">
+    <div class="text-xl font-bold text-[#2D4B37] dark:text-emerald-400">Ikot Aba Country Farms</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#2D4B37] dark:text-emerald-400 border-b-2 border-[#2D4B37] pb-1 font-semibold transition-colors" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#2D4B37] transition-colors" href="#products">Products</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#2D4B37] transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 bg-[#2D4B37] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-opacity-90 active:opacity-80 transition-all">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+<span>Cart</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-0">
+<!-- Hero Section -->
+<section id="hero" role="hero" class="w-full px-[10px] pt-0 pb-section-margin">
+    <div class="relative w-full overflow-hidden rounded-card" style="height:716px;">
+        <img alt="Farm landscape" class="absolute left-0 top-0 w-full h-full object-cover" data-alt="expansive golden wheat field at sunrise with a distant farmhouse and soft mist rolling over green hills in early morning light" src="/white-chicken-farm.jpg"/>
+        <div class="absolute inset-0 hero-gradient-overlay flex flex-col justify-end p-6 md:p-12">
+            <div class="max-w-[min(900px,85%)]">
+                <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed-variant px-4 py-1.5 rounded-full text-label-sm font-label-sm mb-4" style="font-weight:700;">ESTABLISHED TRADITION</span>
+                <h1 class="text-white mb-4 leading-tight" style="font-size:clamp(34px,5.5vw,56px);font-weight:800;line-height:1.08;">Sustainable Farming, Family Heritage</h1>
+                <p class="text-white/80 mb-6" style="font-size:clamp(16px,2.4vw,20px);max-width:60%;font-weight:600;">Experience the purity of Ikot Aba Country Farms, where ethical livestock management meets modern agricultural excellence.</p>
+                <div class="flex gap-4">
+                    <a class="bg-white text-primary px-6 py-3 rounded-full font-label-sm transition-all hover:bg-surface-container-high" href="#products">Explore Our Livestock</a>
+                    <a class="border border-white/30 text-white px-6 py-3 rounded-full font-label-sm backdrop-blur-md transition-all hover:bg-white/10" href="#contact">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Livestock Section -->
+<section class="bg-surface-container-low py-section-margin px-container-padding" id="products">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-2">Our Livestock</h2>
+<p class="font-body-md text-on-surface-variant max-w-md">Premium quality livestock raised with the highest standards of animal welfare and environmental stewardship.</p>
+</div>
+<div class="hidden md:block h-px flex-grow bg-outline-variant mx-12 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-card-gap">
+<!-- Featured Product: Broilers (Asymmetric Wide Card) -->
+<div class="md:col-span-8 bg-white rounded-card p-10 border border-[#E5E2DA] signature-shadow flex flex-col md:flex-row gap-10">
+<div class="md:w-1/2">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">nest_eco_leaf</span>
+<span class="font-label-sm text-secondary uppercase tracking-widest text-xs">Premium Poultry</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-4">Quality Broilers</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Our broilers are raised in a stress-free environment, ensuring healthy growth and superior meat quality. We follow strict organic feeding protocols to deliver the best nutritional value to your table.</p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-weight="fill">check_circle</span>
+<span class="font-body-md">Hormone-free and antibiotic-free</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-weight="fill">check_circle</span>
+<span class="font-body-md">Optimized growth cycles for tenderness</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-weight="fill">check_circle</span>
+<span class="font-body-md">Strict hygiene and biosecurity standards</span>
+</li>
+</ul>
+<button class="bg-primary text-white px-8 py-3.5 rounded-full font-label-sm w-full md:w-auto hover:opacity-90 transition-opacity">Request Price List</button>
+</div>
+<div class="md:w-1/2 relative min-h-[300px]">
+    <img alt="Broiler farming" class="absolute inset-0 w-full h-full object-cover rounded-2xl" data-alt="close-up of healthy white broiler chickens in a clean well-lit modern ventilated barn with soft natural sunlight" src="/brown-chickens-farm.jpg"/>
+</div>
+</div>
+<!-- Secondary Product: Pigs (Tall Card) -->
+<div class="md:col-span-4 bg-white rounded-card p-10 border border-[#E5E2DA] signature-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">pets</span>
+<span class="font-label-sm text-secondary uppercase tracking-widest text-xs">Livestock</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-4">Modern Piggery</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Professional swine management focusing on cross-breeding for the best feed-to-meat conversion ratios.</p>
+<div class="aspect-video w-full mb-8">
+<img alt="Swine farming" class="w-full h-full object-cover rounded-2xl" data-alt="young pink piglets grazing in a lush green pasture under a clear blue sky during late afternoon with golden highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBHNxBgqrlIVbJqJYaHhwyAdB-FZwryM2z4PVBkb_puXedAT-LjvJuqvOp7MoeQ926BVwLbXt5_mWYuUlCQpRBF1TkvERekjPGSSWrsMgHj-cRtI5Ia0w1xnWe8LtrkoO5d1DPggJsBcpcWMTyWNwbailJq8JbdrQyW3Pq4_yr3GdWJppA_zprOMFJFNrw1X47ATkuZsBlHxlloO3FkyvH-yu0n8kY0YXdbvH_wv7acWGConNgHVqWuY8fuwrFqFi4KY4vT3RoJRUw"/>
+</div>
+</div>
+<button class="w-full border-2 border-secondary/20 text-secondary px-8 py-3.5 rounded-full font-label-sm hover:bg-secondary/5 transition-colors">Order Livestock</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Coming Soon Section -->
+<section class="py-section-margin px-container-padding max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-secondary uppercase tracking-widest text-xs">Future Horizons</span>
+<h2 class="font-h2 text-h2 text-primary mt-2">Expansion Projects</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Turkey -->
+<div class="group relative bg-surface-container-high rounded-card p-8 border border-outline-variant/30 text-center transition-all hover:-translate-y-2">
+<div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">egg_alt</span>
+</div>
+<h4 class="font-h3 text-h3 text-primary mb-2">Turkeys</h4>
+<p class="font-body-md text-on-surface-variant">Premium festive birds raised for size and flavor.</p>
+<div class="mt-4 inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Q4 2024</div>
+</div>
+<!-- Layers -->
+<div class="group relative bg-surface-container-high rounded-card p-8 border border-outline-variant/30 text-center transition-all hover:-translate-y-2">
+<div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">cooking</span>
+</div>
+<h4 class="font-h3 text-h3 text-primary mb-2">Layers</h4>
+<p class="font-body-md text-on-surface-variant">Sustainable egg production facilities under development.</p>
+<div class="mt-4 inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">In Progress</div>
+</div>
+<!-- Fish Farming -->
+<div class="group relative bg-surface-container-high rounded-card p-8 border border-outline-variant/30 text-center transition-all hover:-translate-y-2">
+<div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+</div>
+<h4 class="font-h3 text-h3 text-primary mb-2">Fish Farming</h4>
+<p class="font-body-md text-on-surface-variant">Advanced aquaculture systems for freshwater species.</p>
+<div class="mt-4 inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Planning Phase</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 px-container-padding" id="contact">
+<div class="max-w-7xl mx-auto bg-primary rounded-card p-8 md:p-12 relative overflow-hidden">
+<!-- Abstract Design Elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -ml-48 -mb-48"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-h1 text-h1 text-white mb-6">Get in touch with us</h2>
+<p class="font-body-lg text-white/70 mb-8 max-w-md">Ready to source premium livestock or want to visit our farm? Our management team is available for direct inquiries.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-xl">
+<span class="material-symbols-outlined text-on-primary-container">person</span>
+</div>
+<div>
+<p class="text-white/60 text-sm font-label-sm uppercase tracking-wider">Farm Manager</p>
+<p class="text-white font-h3 text-lg">Antietie</p>
+<p class="text-on-primary-container">09160834802</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-xl">
+<span class="material-symbols-outlined text-on-primary-container">person</span>
+</div>
+<div>
+<p class="text-white/60 text-sm font-label-sm uppercase tracking-wider">Operations Lead</p>
+<p class="text-white font-h3 text-lg">Godwin</p>
+<p class="text-on-primary-container">09025413726</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-card">
+<div class="bg-white/10 p-4 rounded-2xl">
+<p class="text-white/60 text-sm mb-1">Email Inquiry</p>
+<a class="text-white text-lg font-semibold hover:text-on-primary-container transition-colors" href="mailto:hello@ikotabafarms.com">hello@ikotabafarms.com</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="w-full border-t border-[#E5E2DA] bg-[#F9F8F6]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-4">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-bold text-emerald-900 font-manrope">Ikot Aba Country Farms</div>
+<p class="text-stone-500 font-manrope text-sm">© 2024 Ikot Aba Country Farms. Managed by Antietie &amp; Godwin.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-500 text-sm font-manrope hover:underline" href="#">Privacy Policy</a>
+<a class="text-stone-500 text-sm font-manrope hover:underline" href="#">Terms of Service</a>
+<a class="text-stone-500 text-sm font-manrope hover:underline" href="#">Livestock Care Standards</a>
+</div>
+</div>
+</footer>
+</body></html>
