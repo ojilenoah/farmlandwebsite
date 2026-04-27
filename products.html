@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | Ikot Aba Country Farms</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#2f4d39",
+                        "background": "#faf9f7",
+                        "secondary": "#536442",
+                        "primary": "#163422",
+                        "primary-container": "#2d4b37",
+                        "surface": "#faf9f7",
+                        "surface-dim": "#dadad8",
+                        "surface-container-low": "#f4f3f1",
+                        "unit": "8px",
+                        "card-gap": "32px",
+                        "gutter": "24px",
+                        "tertiary-fixed": "#f4dfcb",
+                        "on-primary-container": "#99baa1",
+                        "on-background": "#1a1c1b",
+                        "secondary-fixed-dim": "#bacda4",
+                        "on-primary-fixed": "#022110",
+                        "primary-fixed-dim": "#adcfb4",
+                        "on-surface-variant": "#424843",
+                        "on-secondary-fixed-variant": "#3c4c2c",
+                        "tertiary-container": "#504234",
+                        "surface-container": "#efeeec",
+                        "on-tertiary-container": "#c2af9c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#d7c3b0",
+                        "tertiary": "#382c1f",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary-container": "#596a47",
+                        "on-tertiary-container": "#c2af9c",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#241a0e",
+                        "surface-tint": "#466550",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d6e9be",
+                        "surface-container-high": "#e9e8e6",
+                        "inverse-primary": "#adcfb4",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e3e2e0",
+                        "secondary-container": "#d6e9be",
+                        "inverse-on-surface": "#f1f1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#c8ebd0",
+                        "outline-variant": "#c2c8c0",
+                        "on-surface": "#1a1c1b",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2f3130"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "card": "32px"
+                    },
+                    "spacing": {
+                        "container-padding": "32px",
+                        "section-margin": "64px",
+                        "unit": "8px",
+                        "card-gap": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Manrope"],
+                        "label-sm": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "h3": ["Manrope"],
+                        "h1": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "h2": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+.signature-shadow {
+    box-shadow: 0 4px 40px -10px rgba(22, 52, 34, 0.15);
+}
+.hero-gradient-overlay {
+    background: linear-gradient(to bottom, rgba(22, 52, 34, 0.4), rgba(22, 52, 34, 0.85));
+}
+body {
+    background-color: #faf9f7;
+    color: #1a1c1b;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+</style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<header class="w-full sticky top-0 z-50 bg-background/90 backdrop-blur-sm border-b border-[#E5E2DA]/50">
+<nav class="max-w-[1280px] mx-auto flex justify-between items-center px-8 py-4 font-manrope tracking-tight">
+    <div class="text-xl font-bold text-[#2D4B37]">Ikot Aba Country Farms</div>
+    <div class="hidden md:flex gap-8 items-center">
+        <a class="text-stone-600 hover:text-[#2D4B37] transition-colors" href="index.html">Home</a>
+        <a class="text-[#2D4B37] font-semibold" href="products.html">Products</a>
+        <a class="text-stone-600 hover:text-[#2D4B37] transition-colors" href="#contact">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+        <button class="flex items-center gap-2 bg-[#2D4B37] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-opacity-90 active:opacity-80 transition-all">
+            <span class="material-symbols-outlined text-xl">shopping_cart</span>
+            <span>Cart</span>
+        </button>
+    </div>
+</nav>
+</header>
+<main class="pt-0">
+<section class="w-full px-[10px] pt-0 pb-20">
+    <div class="relative w-full overflow-hidden rounded-card" style="height:620px;">
+        <img alt="Chicken farm showroom" class="absolute left-0 top-0 w-full h-full object-cover" src="/brown-chickens-farm.jpg" />
+        <div class="absolute inset-0 hero-gradient-overlay flex items-center p-6 md:p-12">
+            <div class="max-w-[min(900px,85%)] text-white">
+                <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed-variant px-4 py-1.5 rounded-full text-sm font-semibold mb-4">PRODUCTS SHOP</span>
+                <h1 class="text-white mb-6 leading-tight" style="font-size:clamp(48px,7vw,90px);font-weight:900;line-height:1.02;">Livestock Shop & Checkout</h1>
+                <p class="text-white/80 max-w-xl text-lg font-semibold">Browse chicks and piglets ready to add to your cart. Choose pickup after payment and we will notify you when your order is ready for collection.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-surface-container-low py-section-margin px-container-padding" id="products">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid gap-10 lg:grid-cols-[1.55fr_0.95fr] items-start">
+            <div class="space-y-10">
+                <div class="rounded-card bg-white p-8 border border-[#E5E2DA] signature-shadow">
+                    <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.32em] text-secondary mb-2">Featured Live Stock</p>
+                            <h2 class="text-3xl font-bold text-primary">Pick your category and add to cart</h2>
+                        </div>
+                        <p class="text-sm text-on-surface-variant max-w-xl">Each product card is selectable and ready for checkout. Pick up on farm or choose delivery after payment.</p>
+                    </div>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-primary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Chicks</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Day Old Chicks</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Ideal for immediate brooding and rapid growth on your farm.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦2,500</span>
+                            <button data-product-id="chick-dayold" data-product-name="Day Old Chicks" data-product-price="2500" data-product-category="Chicks" class="add-to-cart rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-[#194229]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-primary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Chicks</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">2 Weeks Old</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Healthy starter birds that are fully begun on feed and care.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦3,900</span>
+                            <button data-product-id="chick-2weeks" data-product-name="2 Weeks Old Chicks" data-product-price="3900" data-product-category="Chicks" class="add-to-cart rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-[#194229]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-primary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Chicks</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">4 Weeks Old</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Growing birds with strong weight gain and sturdy condition.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦5,800</span>
+                            <button data-product-id="chick-4weeks" data-product-name="4 Weeks Old Chicks" data-product-price="5800" data-product-category="Chicks" class="add-to-cart rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-[#194229]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-primary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Chicks</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">8 Weeks Old</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Ready for farm transfer with excellent body condition.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦8,900</span>
+                            <button data-product-id="chick-8weeks" data-product-name="8 Weeks Old Chicks" data-product-price="8900" data-product-category="Chicks" class="add-to-cart rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-[#194229]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm md:col-span-2">
+                        <span class="inline-flex items-center rounded-full bg-primary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Chicks</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Custom Chicks Order</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Choose your preferred batch size, age, and delivery date for any quantity.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">Custom pricing</span>
+                            <button data-product-id="chick-custom" data-product-name="Custom Chicks Order" data-product-price="0" data-product-category="Chicks" class="add-to-cart rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-[#194229]">Select option</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-card bg-white p-8 border border-[#E5E2DA] signature-shadow">
+                    <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.32em] text-secondary mb-2">Pigs</p>
+                            <h2 class="text-3xl font-bold text-primary">Swine Stock</h2>
+                        </div>
+                        <p class="text-sm text-on-surface-variant max-w-md">Choose piglets at the age you need—newborn, weaned or growing stock for your farm.</p>
+                    </div>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-secondary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Pigs</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">New Born Piglets</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Fresh arrivals raised under close supervision for healthy starts.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦18,000</span>
+                            <button data-product-id="pig-newborn" data-product-name="New Born Piglets" data-product-price="18000" data-product-category="Pigs" class="add-to-cart rounded-full bg-secondary px-5 py-3 text-sm font-semibold text-white hover:bg-[#405c32]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-secondary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Pigs</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">3 Months Old</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Weaned piglets with strong weight gain and good temperament.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦24,000</span>
+                            <button data-product-id="pig-3months" data-product-name="3 Months Old Piglets" data-product-price="24000" data-product-category="Pigs" class="add-to-cart rounded-full bg-secondary px-5 py-3 text-sm font-semibold text-white hover:bg-[#405c32]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-secondary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Pigs</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">6 Months Old</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Larger stock ready for longer-term growth or breeding.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">₦34,000</span>
+                            <button data-product-id="pig-6months" data-product-name="6 Months Old Piglets" data-product-price="34000" data-product-category="Pigs" class="add-to-cart rounded-full bg-secondary px-5 py-3 text-sm font-semibold text-white hover:bg-[#405c32]">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="rounded-card bg-white border border-[#E5E2DA] p-6 shadow-sm">
+                        <span class="inline-flex items-center rounded-full bg-secondary text-white px-3 py-1 text-xs uppercase tracking-[0.25em] mb-4">Pigs</span>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Custom Swine Order</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">Specify your preferred age, batch size, and delivery or pickup details.</p>
+                        <div class="flex items-center justify-between gap-4">
+                            <span class="text-lg font-bold text-primary">Custom pricing</span>
+                            <button data-product-id="pig-custom" data-product-name="Custom Swine Order" data-product-price="0" data-product-category="Pigs" class="add-to-cart rounded-full bg-secondary px-5 py-3 text-sm font-semibold text-white hover:bg-[#405c32]">Select option</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="rounded-3xl border border-[#E5E2DA] bg-white p-6 shadow-[0_30px_60px_-30px_rgba(22,52,34,0.18)]">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <p class="text-sm uppercase tracking-[0.3em] text-secondary">Cart Summary</p>
+                        <h2 class="text-2xl font-bold text-primary">Your Order</h2>
+                    </div>
+                    <span class="inline-flex items-center rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">Ready to checkout</span>
+                </div>
+                <div id="cart-items" class="space-y-4 text-sm text-on-surface-variant min-h-[120px]">
+                    <p class="text-sm text-on-surface-variant">No items yet. Add products to your cart.</p>
+                </div>
+                <div class="mt-6 rounded-3xl border border-[#E5E2DA] bg-surface-container p-5">
+                    <label class="text-sm font-semibold text-primary block mb-2" for="order-type">Order type</label>
+                    <select id="order-type" class="w-full rounded-2xl border border-[#D8D5CF] bg-white px-4 py-3 text-sm text-on-surface-variant">
+                        <option value="pickup">Pickup</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+                <div class="mt-6 flex items-center justify-between">
+                    <p class="text-sm font-semibold text-on-surface">Total</p>
+                    <p id="cart-total" class="text-xl font-bold text-primary">₦0</p>
+                </div>
+                <button id="checkout-btn" class="mt-6 w-full rounded-full bg-primary px-6 py-4 text-sm font-semibold uppercase text-white hover:bg-[#194229]">Place Order</button>
+                <p id="cart-status" class="mt-5 text-sm text-on-surface-variant"></p>
+            </aside>
+        </div>
+    </div>
+</section>
+<section class="py-16 px-container-padding" id="contact">
+<div class="max-w-7xl mx-auto bg-primary rounded-card p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -ml-48 -mb-48"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-[1.3fr_0.9fr] gap-12">
+<div>
+<h2 class="font-h1 text-h1 text-white mb-6">Need help selecting stock?</h2>
+<p class="font-body-lg text-white/70 mb-8 max-w-lg">Contact our team to confirm availability, set your pickup date, or schedule delivery after payment.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="bg-white/10 border border-white/10 rounded-3xl p-5">
+<p class="text-white/60 text-xs uppercase tracking-[0.22em] mb-2">Farm Manager</p>
+<p class="text-white font-bold text-lg">Antietie</p>
+<p class="text-white/80">09160834802</p>
+</div>
+<div class="bg-white/10 border border-white/10 rounded-3xl p-5">
+<p class="text-white/60 text-xs uppercase tracking-[0.22em] mb-2">Operations Lead</p>
+<p class="text-white font-bold text-lg">Godwin</p>
+<p class="text-white/80">09025413726</p>
+</div>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-card">
+<div class="bg-white/10 p-4 rounded-2xl">
+<p class="text-white/60 text-sm mb-1">Email Inquiry</p>
+<a class="text-white text-lg font-semibold hover:text-on-primary-container transition-colors" href="mailto:hello@ikotabafarms.com">hello@ikotabafarms.com</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="w-full border-t border-[#E5E2DA] bg-[#F9F8F6]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-4">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-bold text-emerald-900 font-manrope">Ikot Aba Country Farms</div>
+<p class="text-stone-500 font-manrope text-sm">© 2026 Ikot Aba Country Farms. Managed by Antietie &amp; Godwin.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-500 text-sm font-manrope hover:underline" href="#">Privacy Policy</a>
+<a class="text-stone-500 text-sm font-manrope hover:underline" href="#">Terms of Service</a>
+<a class="text-stone-500 text-sm font-manrope hover:underline" href="#">Livestock Care Standards</a>
+</div>
+</div>
+</footer>
+<script>
+const cart = [];
+const cartItemsEl = document.getElementById('cart-items');
+const cartTotalEl = document.getElementById('cart-total');
+const statusEl = document.getElementById('cart-status');
+const orderType = document.getElementById('order-type');
+const checkoutBtn = document.getElementById('checkout-btn');
+
+function renderCart() {
+  if (cart.length === 0) {
+    cartItemsEl.innerHTML = '<p class="text-sm text-on-surface-variant">No items yet. Add products to your cart.</p>';
+    cartTotalEl.textContent = '₦0';
+    return;
+  }
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+  cartItemsEl.innerHTML = cart.map(item => {
+    return `<div class="rounded-3xl border border-[#E5E2DA] bg-surface-container p-4">
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <p class="font-semibold text-primary">${item.name}</p>
+          <p class="text-xs text-on-surface-variant uppercase tracking-[0.2em]">${item.category}</p>
+        </div>
+        <p class="font-semibold text-primary">×${item.qty}</p>
+      </div>
+      <div class="mt-2 text-sm text-on-surface-variant">₦${item.price.toLocaleString()} each</div>
+    </div>`;
+  }).join('');
+  cartTotalEl.textContent = `₦${total.toLocaleString()}`;
+}
+
+function addToCart(product) {
+  const existing = cart.find(item => item.id === product.id);
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ ...product, qty: 1 });
+  }
+  renderCart();
+  statusEl.textContent = `${product.name} added to cart.`;
+}
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', () => {
+    const product = {
+      id: button.dataset.productId,
+      name: button.dataset.productName,
+      price: Number(button.dataset.productPrice),
+      category: button.dataset.productCategory,
+    };
+    addToCart(product);
+  });
+});
+
+checkoutBtn.addEventListener('click', () => {
+  if (cart.length === 0) {
+    statusEl.textContent = 'Please add at least one item to your cart before checking out.';
+    return;
+  }
+
+  const type = orderType.value === 'pickup' ? 'pickup' : 'delivery';
+  statusEl.textContent = `Order placed successfully for ${type}. You will be notified when your order is ready.`;
+  cart.length = 0;
+  renderCart();
+});
+
+renderCart();
+</script>
+</main>
+</body>
+</html>
